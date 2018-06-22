@@ -10,9 +10,8 @@ public class Fornecedor extends PessoaAbstract {
   Fornecedor(){
     super();
   }
-  
-  public void venda(Produto a,int q) {
-    a.setEstoque (q);
+  public void venda(Produto a,int addEstoque) {
+    a.setEstoque (addEstoque);
   }  
   
   

@@ -26,7 +26,7 @@ public void inserir(Produto nome, int quantidade) {
    }
 
 public boolean procurar(Produto nome, int quantidade) {
-    boolean resposta;
+    boolean resposta= false;
     if (this.nome.equals(nome) && this.nome != null) {
        resposta = true;
        return resposta;
@@ -35,7 +35,7 @@ public boolean procurar(Produto nome, int quantidade) {
     } else if (this.proximo != null) {
        this.proximo.procurar(nome, quantidade);
     }
-	return false;
+	return resposta;
 }
 
 public void remover(Produto nome) throws PNEException {

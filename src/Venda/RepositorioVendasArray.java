@@ -10,14 +10,14 @@ public class RepositorioVendasArray implements RepositorioVendas {
 	  private int [] quantidade = new int[2];
 	  
 	public void inserir(Produto nome, int quantidade) {
-	    if (!RepositorioVendasArray.procurar(nome, quantidade)) {
+	    //Primeiro checar se o produto já foi inserido
 	        for (int i = 0; i < 10; i++) {
 	          if (this.arrayProduto[i] == null) {
 	             this.arrayProduto[i] =  nome;
 	             this.quantidade[i] = quantidade;
 	          }
 	        }
-	      }	    	  
+	      	    	  
 	}
 
 	public  boolean procurar(Produto nome, int quantidade) {
@@ -43,7 +43,5 @@ public class RepositorioVendasArray implements RepositorioVendas {
 		throw new PNEException();
 		}
 	 }
-		
 	}
-	
 }

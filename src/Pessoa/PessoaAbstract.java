@@ -1,13 +1,19 @@
 package Pessoa;
+
+import Produto.Produto;
+
 public abstract class PessoaAbstract {
   
-  protected static String nome;
+  private String nome;
+  private String cpf;
   
- 
-void PessoaAbstract(){
+ PessoaAbstract(){
     this.nome = null;
+    this.cpf = null;
   }
-  
-
+ //Fornecedor adiciona ao Estoque
+ //Cliente retira do estoque
+public void venda(Produto a, int d) {
+}
   
 }
