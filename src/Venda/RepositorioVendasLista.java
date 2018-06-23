@@ -10,7 +10,7 @@ public class RepositorioVendasLista implements RepositorioVendas {
   private int quantidade;
   private RepositorioVendasLista proximo;
 
-  RepositorioVendasLista() {
+  public RepositorioVendasLista() {
     this.nome = null;
     this.proximo = null;
     this.quantidade = 0;
@@ -29,6 +29,7 @@ public boolean procurar(Produto nome, int quantidade) {
     boolean resposta= false;
     if (this.nome.equals(nome) && this.nome != null) {
        resposta = true;
+       this.quantidade += quantidade;
        return resposta;
     } else if (this.nome == null && this.proximo == null) {
       resposta = false;

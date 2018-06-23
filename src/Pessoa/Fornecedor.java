@@ -1,18 +1,18 @@
 package Pessoa;
 
 import Produto.Produto;
+import Venda.Venda;
 
 public class Fornecedor extends PessoaAbstract {
   
   private Produto produto;
   private int Quantidade;
   
-  Fornecedor(){
+  public Fornecedor(Produto produto, int quantidade){
     super();
   }
-  public void venda(Produto a,int addEstoque) {
-    a.setEstoque (addEstoque);
-  }  
-  
-  
+  //Attention
+  public void venda(Produto a,int addEstoque, Venda venda) {
+    a.setEstoque(addEstoque);
+  }
 }

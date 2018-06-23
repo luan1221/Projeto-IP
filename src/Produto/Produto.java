@@ -7,7 +7,7 @@ public class Produto {
   private int estoque;
   public double preco;
   
-  Produto (String name, int quantity, double price) {
+  public Produto (String name, int quantity, double price) {
     this.nome = name;
     this.estoque = quantity;
     this.preco = price;

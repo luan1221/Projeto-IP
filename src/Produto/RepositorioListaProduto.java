@@ -37,7 +37,8 @@ public class RepositorioListaProduto implements repositorioProduto {
   }
   
   public void removerProduto (Produto name) throws PNEException{
-   if (this.nome.equals(name)) {
+   if(this.nome !=null) {
+	 if (this.nome.equals(name)) {
        this.nome = this.proximo.nome;
        this.proximo = this.proximo.proximo;
     } else if (this.proximo != null) {
@@ -45,6 +46,7 @@ public class RepositorioListaProduto implements repositorioProduto {
     } else {
      throw new PNEException();
    }
+  }
   }
 
 

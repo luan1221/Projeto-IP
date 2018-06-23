@@ -1,6 +1,7 @@
 package Pessoa;
 
 import Produto.Produto;
+import Venda.Venda;
 
 public abstract class PessoaAbstract {
   
@@ -13,6 +14,6 @@ public abstract class PessoaAbstract {
   }
  //Fornecedor adiciona ao Estoque
  //Cliente retira do estoque
-public abstract void venda(Produto a, int d);
+public abstract void venda(Produto a,int addEstoque, Venda venda);
   
 }

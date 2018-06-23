@@ -16,17 +16,12 @@ public class RepositorioArrayProduto implements repositorioProduto {
       }
     }
   //Chechar se ja inseriu na fachada
-  else {
-      throw new PJIException();
-    }
-  
-  
-  
   public boolean procurarProduto (Produto name) {
     boolean nAchou = false;
     for (int i = 0; i < 10 && nAchou; i++) {
       if (arrayProduto[i].equals(name)) {
         nAchou = true;
+        
         return nAchou;
       }
   }

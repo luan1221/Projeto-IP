@@ -6,7 +6,7 @@ import Outros.PNEException;
 
 public class Negocio {
 	private repositorioProduto produto;
-	Negocio(repositorioProduto rep) {
+	public Negocio(repositorioProduto rep) {
 		this.produto = rep;
 	}
 	 public void inserirProduto(Produto name) throws PJIException, PNEException {

@@ -14,7 +14,7 @@ public class NegocioFornecedor {
 	  public boolean procurarFornecedor(Fornecedor name) throws PNEException, EVException {
 		  return produto.procurarFornecedor(name);
 	  }
-	  public void removerProduto(Fornecedor name) throws PNEException{
+	  public void removerFornecedor(Fornecedor name) throws PNEException{
 		  produto.removerFornecedor(name);
 	  }
 }
