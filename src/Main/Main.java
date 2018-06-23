@@ -31,7 +31,6 @@ public class Main {
 		Venda vendaPedro = new Venda(repositorioVenda);
 		fachada.inserirProduto(Cafe, negocioProduto);
 		fachada.inserirCliente(Pedro, negocioCliente);
-		Pedro.venda(Cafe, 5, vendaPedro);
 		//Adicionar à venda atributo de nome do cliente do carrinho
 	}
 }

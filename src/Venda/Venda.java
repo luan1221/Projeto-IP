@@ -11,7 +11,7 @@ public class Venda {
 	private int numItens;
 	
 	public Venda(RepositorioVendas carrinho) {
-		this.carrinho = null;
+		this.carrinho = carrinho;
 		this.saldoCompra = 0.0;
 		this.numItens = 0;
 	}

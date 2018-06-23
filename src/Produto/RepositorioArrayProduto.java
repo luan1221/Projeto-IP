@@ -12,6 +12,7 @@ public class RepositorioArrayProduto implements repositorioProduto {
       for (int i = 0; i < 10; i++) {
         if (arrayProduto[i] == null) {
            arrayProduto[i] =  name;
+           i +=10; 
         }
       }
     }

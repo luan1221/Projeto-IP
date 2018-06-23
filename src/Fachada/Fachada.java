@@ -10,6 +10,7 @@ import Pessoa.NegocioCliente;
 import Pessoa.NegocioFornecedor;
 import Produto.Negocio;
 import Produto.Produto;
+import Venda.Venda;
 
 public class Fachada {
 	public void inserirCliente(Cliente nome, NegocioCliente negocioCliente) throws PNEException, EVException{
@@ -59,6 +60,10 @@ public class Fachada {
 	public void procurarFornecedor(Fornecedor nome, NegocioFornecedor negocioFornecedor) throws PNEException, EVException {
 		negocioFornecedor.procurarFornecedor(nome);
 		//Fornecedor não encontrado
+	}
+	//Metodos de venda
+	public void inserirItem(Produto prod, int quantidade, Venda vendaCliente) {
+		
 	}
 
 }

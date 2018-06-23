@@ -5,11 +5,10 @@ public class FornecedorRepositorioArray implements InterfaceFornecedor {
 	 
 	  
 	  public void inserirFornecedor(Fornecedor name){
-	    for(int i = 0; i<10;i++){
-	      if(arrayFornecedor[i] == null){
+		for(int i = 0; i<10;i++){
+	      if(arrayFornecedor[i] == null)
 	        arrayFornecedor[i] = name;
 	        i = i+10;
-	      }
 	    }
 	    }
 	  

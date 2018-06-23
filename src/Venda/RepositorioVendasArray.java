@@ -15,6 +15,7 @@ public class RepositorioVendasArray implements RepositorioVendas {
 	          if (this.arrayProduto[i] == null) {
 	             this.arrayProduto[i] =  nome;
 	             this.quantidade[i] = quantidade;
+	             i +=10;
 	          }
 	        }
 	      	    	  
