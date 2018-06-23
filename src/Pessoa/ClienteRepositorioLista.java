@@ -4,7 +4,7 @@ public class ClienteRepositorioLista implements InterfaceCliente {
   private Cliente nome;
   private ClienteRepositorioLista proximo;
   
-  ClienteRepositorioLista() {
+  public ClienteRepositorioLista() {
     this.nome = null;
     this.proximo = null;
   }
@@ -19,12 +19,14 @@ public class ClienteRepositorioLista implements InterfaceCliente {
   }
   
   public boolean procurarCliente(Cliente name){
-    boolean resposta;
-    if(this.nome.equals(name)){
-      resposta = true;
-      return resposta;
-    }else if(this.proximo!= null) {
-      this.proximo.procurarCliente(name);
+    boolean resposta = false;
+    if(this.nome!=null) {
+	    if(this.nome.equals(name)){
+	      resposta = true;
+	      return resposta;
+	    }else if(this.proximo!= null) {
+	      this.proximo.procurarCliente(name);
+	    }
     }
     return false;
   }

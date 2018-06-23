@@ -13,7 +13,6 @@ public abstract class PessoaAbstract {
   }
  //Fornecedor adiciona ao Estoque
  //Cliente retira do estoque
-public void venda(Produto a, int d) {
-}
+public abstract void venda(Produto a, int d);
   
 }

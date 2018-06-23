@@ -14,6 +14,7 @@ public class Venda {
 		this.saldoCompra = 0.0;
 		this.numItens = 0;
 	}
+	//Insere o item à lista de compra e adiciona o preco ao Saldo Total
 	public void inserirItem(Produto prod, int quantidade) {
 		carrinho.inserir(prod,quantidade);
 		saldoCompra += quantidade*prod.getPreco();

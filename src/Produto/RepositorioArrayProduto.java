@@ -3,26 +3,26 @@ package Produto;
 import Outros.PJIException;
 import Outros.PNEException;
 
-public class RepositorioArrayProduto {
+public class RepositorioArrayProduto implements repositorioProduto {
   public static Produto arrayProduto[] = new Produto[10];
   public Produto name;
  
   
   public void inserirProduto(Produto name) throws PJIException, PNEException {
-    if (!RepositorioArrayProduto.procurarProduto(name)) {
       for (int i = 0; i < 10; i++) {
         if (arrayProduto[i] == null) {
            arrayProduto[i] =  name;
         }
       }
-    } else {
+    }
+  //Chechar se ja inseriu na fachada
+  else {
       throw new PJIException();
     }
-  }
   
   
   
-  public static boolean procurarProduto (Produto name) {
+  public boolean procurarProduto (Produto name) {
     boolean nAchou = false;
     for (int i = 0; i < 10 && nAchou; i++) {
       if (arrayProduto[i].equals(name)) {
